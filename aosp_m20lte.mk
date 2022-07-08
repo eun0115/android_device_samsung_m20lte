@@ -12,6 +12,9 @@ $(call inherit-product, $(SRC_TARGET_DIR)/product/full_base_telephony.mk)
 # Inherit device configuration
 $(call inherit-product, device/samsung/m20lte/device.mk)
 
+# Boot Animation
+TARGET_BOOT_ANIMATION_RES := 1080 
+
 # Device identifier. This must come after all inclusions
 PRODUCT_DEVICE := m20lte
 PRODUCT_NAME := aosp_m20lte
