@@ -2,7 +2,7 @@
 # SPDX-License-Identifier: Apache-2.0
 
 # Inherit some common Pixel Experience stuff.
-$(call inherit-product, vendor/aosp/config/common_full_phone.mk)
+$(call inherit-product, vendor/lineage/config/common_full_phone.mk)
 
 # Inherit from those products. Most specific first.
 $(call inherit-product, $(SRC_TARGET_DIR)/product/product_launched_with_o_mr1.mk)
@@ -12,12 +12,17 @@ $(call inherit-product, $(SRC_TARGET_DIR)/product/full_base_telephony.mk)
 # Inherit device configuration
 $(call inherit-product, device/samsung/m20lte/device.mk)
 
-# Boot Animation
-TARGET_BOOT_ANIMATION_RES := 1080 
+# rd Properties
+RICE_OFFICIAL := true
+RICE_MAINTAINER := eun0115
+TARGET_ENABLE_BLUR := false
+TARGET_FACE_UNLOCK_SUPPORTED := true
+SUSHI_BOOTANIMATION := 1080
+TARGET_BUILD_GRAPHENEOS_CAMERA := false
 
 # Device identifier. This must come after all inclusions
 PRODUCT_DEVICE := m20lte
-PRODUCT_NAME := aosp_m20lte
+PRODUCT_NAME := lineage_m20lte
 PRODUCT_MODEL := SM-M205F
 PRODUCT_BRAND := samsung
 PRODUCT_MANUFACTURER := samsung

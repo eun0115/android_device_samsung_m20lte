@@ -1,7 +1,7 @@
 PRODUCT_MAKEFILES := \
-    $(LOCAL_DIR)/aosp_m20lte.mk
+    $(LOCAL_DIR)/lineage_m20lte.mk
 
 COMMON_LUNCH_CHOICES := \
-    aosp_m20lte-eng \
-    aosp_m20lte-user \
-    aosp_m20lte-userdebug
+    lineage_m20lte-eng \
+    lineage_m20lte-user \
+    lineage_m20lte-userdebug
